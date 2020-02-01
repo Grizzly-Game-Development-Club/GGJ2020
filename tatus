@@ -1,0 +1,44 @@
+[33mcommit c06be4dd8205e4eb99d04cd6336dc40f19e15581[m[33m ([m[1;36mHEAD -> [m[1;32msam[m[33m)[m
+Merge: 7fdfe61 80ea5fe
+Author: Samuel-Downs <SamuelDowns17@gmail.com>
+Date:   Sat Feb 1 16:17:54 2020 -0500
+
+    Merge remote-tracking branch 'origin/master' into sam
+
+[33mcommit 7fdfe6172970704d26f41efbeecee20cf6abdf57[m[33m ([m[1;31morigin/sam[m[33m)[m
+Author: Samuel-Downs <SamuelDowns17@gmail.com>
+Date:   Sat Feb 1 16:16:30 2020 -0500
+
+    Created oxygen bar
+
+[33mcommit 80ea5fe8622c13acb6e1a9bf3e992f01c9c678f5[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Justin Sandman <supersand24@gmail.com>
+Date:   Sat Feb 1 16:13:19 2020 -0500
+
+    Update .gitignore
+
+[33mcommit 2305b7890dc25e5d254ca862ff327f7d620b64c7[m
+Author: Justin Sandman <supersand24@gmail.com>
+Date:   Fri Jan 31 22:09:15 2020 -0500
+
+    Added Movement
+
+[33mcommit 4228bd142dde2552a33f2c2d4f59377ae2bbe4d6[m[33m ([m[1;32mmaster[m[33m)[m
+Author: Justin Sandman <supersand24@gmail.com>
+Date:   Fri Jan 31 21:11:24 2020 -0500
+
+    Testing Scene
+    
+    Started working on playerMovement
+
+[33mcommit 8da78e0ea8b78d5a196e507f868c24b7f38182b1[m
+Author: Justin Sandman <supersand24@gmail.com>
+Date:   Fri Jan 31 20:24:26 2020 -0500
+
+    Added Project
+
+[33mcommit cfe45cafaa3c192596f9290a33c62bc2d45aee59[m
+Author: Justin Sandman <supersand24@gmail.com>
+Date:   Fri Jan 31 20:17:04 2020 -0500
+
+    Initial commit
