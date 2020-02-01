@@ -13,18 +13,23 @@ public class PlayerMovement : MonoBehaviour
     public float gravityDistance = 0.4f;
     public LayerMask gravityMask;
 
+    public bool gravityEnabled = true;
+
     Vector3 velocity;
     bool isGrounded;
 
     void Update()
     {
-        isGrounded = Physics.CheckSphere(gravityCheck.position, gravityDistance, gravityMask);
-
-        if (isGrounded && velocity.y < 0)
+        if (gravityEnabled)
         {
-            velocity.y = -2f;
-        }
+            isGrounded = Physics.CheckSphere(gravityCheck.position, gravityDistance, gravityMask);
 
+            if (isGrounded && velocity.y < 0)
+            {
+                velocity.y = -2f;
+            }
+
+        }
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
 
@@ -32,8 +37,10 @@ public class PlayerMovement : MonoBehaviour
 
         controller.Move(movePlayer * speed * Time.deltaTime);
 
-        velocity.y += gravity * Time.deltaTime;
-
-        controller.Move(velocity * Time.deltaTime);
+        if (gravityEnabled)
+        {
+            velocity.y += gravity * Time.deltaTime;
+            controller.Move(velocity * Time.deltaTime);
+        }
     }
 }

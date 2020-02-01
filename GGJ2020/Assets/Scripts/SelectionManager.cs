@@ -70,6 +70,8 @@ public class SelectionManager : MonoBehaviour
                 if (holding.name == "Hammer")
                 {
                     itemHammer.GetComponent<Renderer>().enabled = false;
+                    holding.transform.position = (new Vector3(GameObject.Find("ToolHammer").transform.position.x, GameObject.Find("ToolHammer").transform.position.y, GameObject.Find("ToolHammer").transform.position.z));
+                    holding.transform.rotation = Quaternion.Euler(GameObject.Find("ToolHammer").transform.rotation.x, GameObject.Find("ToolHammer").transform.rotation.y, GameObject.Find("ToolHammer").transform.rotation.z);
                 }
                 else
                 {
@@ -77,8 +79,8 @@ public class SelectionManager : MonoBehaviour
                 }
                 holding.GetComponent<Renderer>().enabled = true;
                 holding.GetComponent<Collider>().enabled = true;
-                holding.transform.position = (new Vector3(GameObject.Find("Hand").transform.position.x, GameObject.Find("Hand").transform.position.y, GameObject.Find("Hand").transform.position.z));
-                holding.GetComponent<Rigidbody>().AddForce(transform.forward * 100);
+                holding.GetComponent<Rigidbody>().AddForce(new Vector3(0, 25, 0));
+                holding.GetComponent<Rigidbody>().AddForce(transform.forward * 50);
 
                 holding = null;
             }
