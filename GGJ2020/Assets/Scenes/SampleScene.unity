@@ -473,7 +473,7 @@ MonoBehaviour:
   gravityMask:
     serializedVersion: 2
     m_Bits: 512
-  gravityEnabled: 0
+  gravityEnabled: 1
 --- !u!114 &552995605
 MonoBehaviour:
   m_ObjectHideFlags: 0
