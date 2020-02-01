@@ -78,6 +78,7 @@ public class SelectionManager : MonoBehaviour
                 holding.GetComponent<Renderer>().enabled = true;
                 holding.GetComponent<Collider>().enabled = true;
                 holding.transform.position = (new Vector3(GameObject.Find("Hand").transform.position.x, GameObject.Find("Hand").transform.position.y, GameObject.Find("Hand").transform.position.z));
+                holding.GetComponent<Rigidbody>().AddForce(transform.forward * 100);
 
                 holding = null;
             }
