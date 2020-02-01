@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,6 +7,7 @@ public class SelectionManager : MonoBehaviour
 {
 
     [SerializeField] private string selectableTag = "Selectable";
+    [SerializeField] private string interactableTag = "Interactable";
     [SerializeField] private Material highlightMaterial;
     [SerializeField] private Material defaultMaterial;
     private GameObject holding = null;
@@ -18,14 +20,21 @@ public class SelectionManager : MonoBehaviour
 
     private Transform _selection;
 
+    public DeviceManager deviceManager;
+
+    public Texture mekanik;
+    public bool showMekanik;
+
     void Update()
     {
+        //Change Material Back
         if (_selection != null)
         {
             var selectionRenderer = _selection.GetComponent<Renderer>();
             selectionRenderer.material = defaultMaterial;
             _selection = null;
         }
+
         var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit))
@@ -33,12 +42,14 @@ public class SelectionManager : MonoBehaviour
             var selection = hit.transform;
             if (selection.CompareTag(selectableTag))
             {
+                //Change Material of Looking at Object
                 var selectionRenderer = selection.GetComponent<Renderer>();
                 if (selectionRenderer != null)
                 {
                     selectionRenderer.material = highlightMaterial;
                 }
-
+                
+                //Save Object, so we can change material back.
                 _selection = selection;
 
                 //If the character is holding nothing, you may pick up an item.
@@ -75,6 +86,41 @@ public class SelectionManager : MonoBehaviour
                         holding.GetComponent<Renderer>().enabled = false;
                         holding.GetComponent<Collider>().enabled = false;
                     }
+                }
+            } else if (selection.CompareTag(interactableTag))
+            {
+                if (Input.GetMouseButtonDown(0))
+                {
+                    /*
+                    if (holding == null)
+                    {
+
+                    }
+                    else if (holding.name == "Hammer")
+                    {
+
+                    }
+                    else if (holding.name == "Fire Extinguisher")
+                    {
+
+                    }
+                    else if (holding.name == "Screwdriver")
+                    {
+
+                    }
+                    else if (holding.name == "Wire Kit")
+                    {
+
+                    }
+                    else if (holding.name == "Wrench")
+                    {
+                        showMekanik = true;
+                        deviceManager.engineDamaged = false;
+                    }
+                    */
+
+                    deviceManager.Repair(holding.name, selection.name);
+
                 }
             }
         }
@@ -120,6 +166,14 @@ public class SelectionManager : MonoBehaviour
 
                 holding = null;
             }
+        }
+    }
+
+    private void OnGUI()
+    {
+        if (showMekanik)
+        {
+            GUI.DrawTexture(new Rect(100, 100, 500, 500), mekanik);
         }
     }
 }
