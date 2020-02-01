@@ -64,9 +64,23 @@ public class SelectionManager : MonoBehaviour
         }
 
         if (holding != null)
-        {   
+        {
+            if (Input.GetMouseButtonDown(1))
+            {
+                if (holding.name == "Hammer")
+                {
+                    itemHammer.GetComponent<Renderer>().enabled = false;
+                }
+                else
+                {
+
+                }
+                holding.GetComponent<Renderer>().enabled = true;
+                holding.GetComponent<Collider>().enabled = true;
+                holding.transform.position = (new Vector3(GameObject.Find("Hand").transform.position.x, GameObject.Find("Hand").transform.position.y, GameObject.Find("Hand").transform.position.z));
+
+                holding = null;
+            }
         }
-
     }
-
 }
