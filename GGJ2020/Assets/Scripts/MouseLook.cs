@@ -11,6 +11,8 @@ public class MouseLook : MonoBehaviour
 
     float xRotation = 0f;
 
+    public Texture cursor;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,5 +30,12 @@ public class MouseLook : MonoBehaviour
 
         transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
         playerBody.Rotate(Vector3.up * mouseX);
+    }
+
+    void OnGUI()
+    {
+        float cursorWidth = 10;
+        float cursorHeight = 10;
+        GUI.DrawTexture(new Rect((Screen.width / 2) - (cursorWidth / 2), (Screen.height / 2) - (cursorHeight / 2), cursorWidth, cursorHeight), cursor);
     }
 }
