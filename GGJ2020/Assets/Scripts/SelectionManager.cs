@@ -8,7 +8,9 @@ public class SelectionManager : MonoBehaviour
     [SerializeField] private string selectableTag = "Selectable";
     [SerializeField] private Material highlightMaterial;
     [SerializeField] private Material defaultMaterial;
-    public Transform holding = null;
+    private GameObject holding = null;
+
+    public GameObject itemHammer;
 
     private Transform _selection;
 
@@ -35,17 +37,34 @@ public class SelectionManager : MonoBehaviour
 
                 _selection = selection;
 
-                if (Input.GetMouseButtonDown(0))
+                //If the character is holding nothing, you may pick up an item.
+                if (holding == null)
                 {
-                    Debug.Log("Button Clicked");
-                    holding = selection;
+                    //On Left Click
+                    if (Input.GetMouseButtonDown(0))
+                    {
+                        holding = GameObject.Find(selection.name);
+
+                        //Find item and if name
+                        if (holding.name == "Hammer")
+                        {
+                            itemHammer.GetComponent<Renderer>().enabled = true;
+                        }
+                        else
+                        {
+
+                        }
+
+                        //Hide World Item Model
+                        holding.GetComponent<Renderer>().enabled = false;
+                        holding.GetComponent<Collider>().enabled = false;
+                    }
                 }
             }
         }
 
         if (holding != null)
-        {
-            holding.position = new Vector3(GameObject.Find("Hand").transform.position.x, GameObject.Find("Hand").transform.position.y, GameObject.Find("Hand").transform.position.z);
+        {   
         }
 
     }
