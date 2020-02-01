@@ -91,36 +91,14 @@ public class SelectionManager : MonoBehaviour
             {
                 if (Input.GetMouseButtonDown(0))
                 {
-                    /*
-                    if (holding == null)
+                    if (holding != null)
                     {
-
+                        deviceManager.Repair(holding.name, selection.name);
                     }
-                    else if (holding.name == "Hammer")
-                    {
-
-                    }
-                    else if (holding.name == "Fire Extinguisher")
-                    {
-
-                    }
-                    else if (holding.name == "Screwdriver")
-                    {
-
-                    }
-                    else if (holding.name == "Wire Kit")
-                    {
-
-                    }
-                    else if (holding.name == "Wrench")
+                    else
                     {
                         showMekanik = true;
-                        deviceManager.engineDamaged = false;
                     }
-                    */
-
-                    deviceManager.Repair(holding.name, selection.name);
-
                 }
             }
         }
@@ -161,8 +139,8 @@ public class SelectionManager : MonoBehaviour
                 }
                 holding.GetComponent<Renderer>().enabled = true;
                 holding.GetComponent<Collider>().enabled = true;
-                holding.GetComponent<Rigidbody>().AddForce(new Vector3(0, 50, 0));
-                holding.GetComponent<Rigidbody>().AddForce(transform.forward * 50);
+                holding.GetComponent<Rigidbody>().AddForce(new Vector3(0, 400, 0));
+                holding.GetComponent<Rigidbody>().AddForce(transform.forward * 80);
 
                 holding = null;
             }
