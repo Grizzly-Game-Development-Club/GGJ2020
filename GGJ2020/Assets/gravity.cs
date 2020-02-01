@@ -9,9 +9,7 @@ public class gravity : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("collision detected");
-
-        if (other.tag == "player")
+        if (other.tag == "Player")
         {
             gravityOn = false;
         }
@@ -19,7 +17,7 @@ public class gravity : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.Find("player");
+        player = GameObject.Find("Player");
     }
 
     // Update is called once per frame
@@ -27,9 +25,9 @@ public class gravity : MonoBehaviour
     {
         if (gravityOn == false)
         {
-           playerMovement move = player.GetComponent<playerMovement>();
+           PlayerMovement move = player.GetComponent<PlayerMovement>();
             // gravity.player = 0;
-            move.GravityEnabled;
+            move.gravityEnabled = false;
         }
     }
 }
