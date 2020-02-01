@@ -11,6 +11,10 @@ public class SelectionManager : MonoBehaviour
     private GameObject holding = null;
 
     public GameObject itemHammer;
+    public GameObject itemFireExtinguisher;
+    public GameObject itemScrewdriver;
+    public GameObject itemWireKit;
+    public GameObject itemWrench;
 
     private Transform _selection;
 
@@ -50,9 +54,21 @@ public class SelectionManager : MonoBehaviour
                         {
                             itemHammer.GetComponent<Renderer>().enabled = true;
                         }
-                        else
+                        else if(holding.name == "Fire Extinguisher")
                         {
-
+                            itemFireExtinguisher.GetComponent<Renderer>().enabled = true;
+                        }
+                        else if (holding.name == "Screwdriver")
+                        {
+                            itemScrewdriver.GetComponent<Renderer>().enabled = true;
+                        }
+                        else if (holding.name == "Wire Kit")
+                        {
+                            itemWireKit.GetComponent<Renderer>().enabled = true;
+                        }
+                        else if (holding.name == "Wrench")
+                        {
+                            itemWrench.GetComponent<Renderer>().enabled = true;
                         }
 
                         //Hide World Item Model
@@ -73,13 +89,33 @@ public class SelectionManager : MonoBehaviour
                     holding.transform.position = (new Vector3(GameObject.Find("ToolHammer").transform.position.x, GameObject.Find("ToolHammer").transform.position.y, GameObject.Find("ToolHammer").transform.position.z));
                     holding.transform.rotation = Quaternion.Euler(GameObject.Find("ToolHammer").transform.rotation.x, GameObject.Find("ToolHammer").transform.rotation.y, GameObject.Find("ToolHammer").transform.rotation.z);
                 }
-                else
+                else if (holding.name == "Fire Extinguisher")
                 {
-
+                    itemFireExtinguisher.GetComponent<Renderer>().enabled = false;
+                    holding.transform.position = (new Vector3(GameObject.Find("ToolFireExtinguisher").transform.position.x, GameObject.Find("ToolFireExtinguisher").transform.position.y, GameObject.Find("ToolFireExtinguisher").transform.position.z));
+                    holding.transform.rotation = Quaternion.Euler(GameObject.Find("ToolFireExtinguisher").transform.rotation.x, GameObject.Find("ToolFireExtinguisher").transform.rotation.y, GameObject.Find("ToolFireExtinguisher").transform.rotation.z);
+                }
+                else if (holding.name == "Screwdriver")
+                {
+                    itemScrewdriver.GetComponent<Renderer>().enabled = false;
+                    holding.transform.position = (new Vector3(GameObject.Find("ToolScrewdriver").transform.position.x, GameObject.Find("ToolScrewdriver").transform.position.y, GameObject.Find("ToolScrewdriver").transform.position.z));
+                    holding.transform.rotation = Quaternion.Euler(GameObject.Find("ToolScrewdriver").transform.rotation.x, GameObject.Find("ToolScrewdriver").transform.rotation.y, GameObject.Find("ToolScrewdriver").transform.rotation.z);
+                }
+                else if (holding.name == "Wire Kit")
+                {
+                    itemWireKit.GetComponent<Renderer>().enabled = false;
+                    holding.transform.position = (new Vector3(GameObject.Find("ToolWireKit").transform.position.x, GameObject.Find("ToolWireKit").transform.position.y, GameObject.Find("ToolWireKit").transform.position.z));
+                    holding.transform.rotation = Quaternion.Euler(GameObject.Find("ToolWireKit").transform.rotation.x, GameObject.Find("ToolWireKit").transform.rotation.y, GameObject.Find("ToolWireKit").transform.rotation.z);
+                }
+                else if (holding.name == "Wrench")
+                {
+                    itemWrench.GetComponent<Renderer>().enabled = false;
+                    holding.transform.position = (new Vector3(GameObject.Find("ToolWrench").transform.position.x, GameObject.Find("ToolWrench").transform.position.y, GameObject.Find("ToolWrench").transform.position.z));
+                    holding.transform.rotation = Quaternion.Euler(GameObject.Find("ToolWrench").transform.rotation.x, GameObject.Find("ToolWrench").transform.rotation.y, GameObject.Find("ToolWrench").transform.rotation.z);
                 }
                 holding.GetComponent<Renderer>().enabled = true;
                 holding.GetComponent<Collider>().enabled = true;
-                holding.GetComponent<Rigidbody>().AddForce(new Vector3(0, 25, 0));
+                holding.GetComponent<Rigidbody>().AddForce(new Vector3(0, 50, 0));
                 holding.GetComponent<Rigidbody>().AddForce(transform.forward * 50);
 
                 holding = null;
