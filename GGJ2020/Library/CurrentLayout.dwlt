@@ -21,8 +21,8 @@ MonoBehaviour:
   m_ShowMode: 0
   m_Title: 
   m_RootView: {fileID: 8}
-  m_MinSize: {x: 230, y: 475}
-  m_MaxSize: {x: 10000, y: 14025}
+  m_MinSize: {x: 230, y: 500}
+  m_MaxSize: {x: 10000, y: 14050}
   m_Maximized: 1
 --- !u!114 &2
 MonoBehaviour:
@@ -67,8 +67,8 @@ MonoBehaviour:
     y: 0
     width: 640
     height: 631
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 74}
+  m_MaxSize: {x: 4002, y: 4024}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 21}
@@ -98,7 +98,7 @@ MonoBehaviour:
   m_MinSize: {x: 479, y: 224}
   m_MaxSize: {x: 8004, y: 4024}
   vertical: 0
-  controlID: 30
+  controlID: 90
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -172,10 +172,10 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 1040
-  m_MinSize: {x: 230, y: 475}
-  m_MaxSize: {x: 10000, y: 14025}
+  m_MinSize: {x: 230, y: 500}
+  m_MaxSize: {x: 10000, y: 14050}
   vertical: 1
-  controlID: 75
+  controlID: 135
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -196,10 +196,10 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 1040
-  m_MinSize: {x: 230, y: 475}
-  m_MaxSize: {x: 10000, y: 14025}
+  m_MinSize: {x: 230, y: 500}
+  m_MaxSize: {x: 10000, y: 14050}
   vertical: 1
-  controlID: 74
+  controlID: 134
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -219,8 +219,8 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 609
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 200, y: 225}
+  m_MaxSize: {x: 4000, y: 4025}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -317,7 +317,7 @@ MonoBehaviour:
   m_MinSize: {x: 479, y: 348}
   m_MaxSize: {x: 8004, y: 8048}
   vertical: 1
-  controlID: 29
+  controlID: 89
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -464,34 +464,34 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Prefab
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Prefab
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\GitHub\GGJ2020\GGJ2020
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 260c0000
-    m_LastClickedID: 3110
-    m_ExpandedIDs: 0000000080090000b02b000000ca9a3b
+    m_SelectedIDs: 722a0000
+    m_LastClickedID: 10866
+    m_ExpandedIDs: 000000004c280000722a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Prefab
-      m_OriginalName: Prefab
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 11184
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 6}
     m_SearchString: 
@@ -505,7 +505,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000080090000
+    m_ExpandedIDs: 000000004c280000722a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -589,9 +589,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 56610000
-      m_LastClickedID: 24918
-      m_ExpandedIDs: f44fffffac62ffffe46cfffffc76ffff28a9ffff00b9ffff4cdeffffe2f4ffffdefbffff840c00008c380000ca38000086430000c24300006a5c0000985c0000945d0000c25d00001c6000004a6000005661000084610000
+      m_SelectedIDs: 7a2c0000
+      m_LastClickedID: 11386
+      m_ExpandedIDs: 702c00007e2c0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -641,14 +641,14 @@ MonoBehaviour:
     height: 611
   m_PersistentViewDataDictionary: {fileID: 0}
   m_WindowGUID: fcc0bf21ad73ebb4c9ee64553ed109fb
-  m_SceneLighting: 1
+  m_SceneLighting: 0
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.7282641, y: 1.6691495, z: -0.5349368}
+    m_Target: {x: 0.1880121, y: 1, z: 0.16500497}
     speed: 2
-    m_Value: {x: 0.7282641, y: 1.6691495, z: -0.5349368}
+    m_Value: {x: 0.1880121, y: 1, z: 0.16500497}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -658,7 +658,7 @@ MonoBehaviour:
   m_SceneViewState:
     showFog: 1
     showMaterialUpdate: 0
-    showSkybox: 1
+    showSkybox: 0
     showFlares: 1
     showImageEffects: 1
     showParticleSystems: 1
@@ -676,13 +676,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.07617323, y: -0.12202999, z: 0.009392482, w: 0.98955446}
+    m_Target: {x: 0.08241322, y: -0.4647949, z: 0.04350274, w: 0.8805007}
     speed: 2
-    m_Value: {x: 0.07617324, y: -0.12203, z: 0.009392483, w: 0.9895545}
+    m_Value: {x: 0.08241322, y: -0.4647949, z: 0.04350274, w: 0.8805007}
   m_Size:
-    m_Target: 0.096955456
+    m_Target: 4.567363
     speed: 2
-    m_Value: 0.096955456
+    m_Value: 4.567363
   m_Ortho:
     m_Target: 0
     speed: 2
