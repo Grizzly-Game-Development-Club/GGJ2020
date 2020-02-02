@@ -722,7 +722,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e552de26da20073478fc9c28675edccb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD:GGJ2020/Assets/Scenes/SampleScene.unity
   controller: {fileID: 552995602}
   speed: 12
   gravity: -9.81
@@ -734,10 +733,6 @@ MonoBehaviour:
   gravityEnabled: 1
 --- !u!114 &552995605
 MonoBehaviour:
-=======
---- !u!1 &1163856985
-GameObject:
->>>>>>> master:GGJ2020/Assets/Scenes/skyBox.unity
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
