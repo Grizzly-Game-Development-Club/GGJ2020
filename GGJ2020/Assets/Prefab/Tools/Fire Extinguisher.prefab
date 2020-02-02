@@ -45,6 +45,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Selectable
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: cf1958d06cb754946972366f0a0c5b55, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cf1958d06cb754946972366f0a0c5b55, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

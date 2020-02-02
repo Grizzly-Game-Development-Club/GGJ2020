@@ -449,6 +449,28 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300000, guid: 603cae9ed095d1a48b7d98e0aa7c7a93, type: 3}
+--- !u!114 &447356349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 447356347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94976ba40403e1c47a0b00d08f42a4b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemHammer: {fileID: 1386044462561902073, guid: ca6376ddbe1ddfa4c96131a826ce2fbf,
+    type: 3}
+  itemScrewdriver: {fileID: 3971117961795846038, guid: a0e3615b7a8ff9a47b37dd6b9e804b49,
+    type: 3}
+  itemWrench: {fileID: 193517485131078472, guid: e85c8ac5354920d49abda428f75f7f55,
+    type: 3}
+  itemWireKit: {fileID: 4332057808327345486, guid: ad5a23d2089f6af4ba05a697c3c12d87,
+    type: 3}
+  itemFireExtinguisher: {fileID: 1269260631261779099, guid: 285a2436114dd044ab248a9f6d4d1520,
+    type: 3}
 --- !u!1 &641589425 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 49c77fe808b20c542949b236dc234e11,
@@ -597,7 +619,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: 603cae9ed095d1a48b7d98e0aa7c7a93, type: 3}
       propertyPath: m_Name
-      value: 3DPrinter
+      value: 3D Printer
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 603cae9ed095d1a48b7d98e0aa7c7a93, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 603cae9ed095d1a48b7d98e0aa7c7a93, type: 3}
       propertyPath: m_LocalPosition.x

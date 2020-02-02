@@ -61,23 +61,23 @@ public class SelectionManager : MonoBehaviour
                         holding = GameObject.Find(selection.name);
 
                         //Find item and if name
-                        if (holding.name == "Hammer")
+                        if (holding.name.Contains("Hammer") && !holding.name.Contains("Tool"))
                         {
                             itemHammer.GetComponent<Renderer>().enabled = true;
                         }
-                        else if(holding.name == "Fire Extinguisher")
+                        else if(holding.name.Contains("Fire Extinguisher") && !holding.name.Contains("Tool"))
                         {
                             itemFireExtinguisher.GetComponent<Renderer>().enabled = true;
                         }
-                        else if (holding.name == "Screwdriver")
+                        else if (holding.name.Contains("Screwdriver") && !holding.name.Contains("Tool"))
                         {
                             itemScrewdriver.GetComponent<Renderer>().enabled = true;
                         }
-                        else if (holding.name == "Wire Kit")
+                        else if (holding.name.Contains("Wire Kit") && !holding.name.Contains("Tool"))
                         {
                             itemWireKit.GetComponent<Renderer>().enabled = true;
                         }
-                        else if (holding.name == "Wrench")
+                        else if (holding.name.Contains("Wrench") && !holding.name.Contains("Tool"))
                         {
                             itemWrench.GetComponent<Renderer>().enabled = true;
                         }
@@ -87,17 +87,29 @@ public class SelectionManager : MonoBehaviour
                         holding.GetComponent<Collider>().enabled = false;
                     }
                 }
-            } else if (selection.CompareTag(interactableTag))
+            }
+            else if (selection.CompareTag(interactableTag))
             {
-                if (Input.GetMouseButtonDown(0))
+                if (selection.name == "3D Printer")
                 {
-                    if (holding != null)
+                    selection.GetComponent<Printer>().StartPrint();
+                    if (Input.GetKey("b"))
                     {
-                        deviceManager.Repair(holding.name, selection.name);
+                        selection.GetComponent<Printer>().FinishPrint();
                     }
-                    else
+                }
+                else
+                {
+                    if (Input.GetMouseButtonDown(0))
                     {
-                        showMekanik = true;
+                        if (holding != null)
+                        {
+                            deviceManager.Repair(holding.name, selection.name);
+                        }
+                        else
+                        {
+                            showMekanik = true;
+                        }
                     }
                 }
             }
@@ -107,31 +119,31 @@ public class SelectionManager : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(1))
             {
-                if (holding.name == "Hammer")
+                if (holding.name.Contains("Hammer") && !holding.name.Contains("Tool"))
                 {
                     itemHammer.GetComponent<Renderer>().enabled = false;
                     holding.transform.position = (new Vector3(GameObject.Find("ToolHammer").transform.position.x, GameObject.Find("ToolHammer").transform.position.y, GameObject.Find("ToolHammer").transform.position.z));
                     holding.transform.rotation = Quaternion.Euler(GameObject.Find("ToolHammer").transform.rotation.x, GameObject.Find("ToolHammer").transform.rotation.y, GameObject.Find("ToolHammer").transform.rotation.z);
                 }
-                else if (holding.name == "Fire Extinguisher")
+                else if (holding.name.Contains("Fire Extinguisher") && !holding.name.Contains("Tool"))
                 {
                     itemFireExtinguisher.GetComponent<Renderer>().enabled = false;
                     holding.transform.position = (new Vector3(GameObject.Find("ToolFireExtinguisher").transform.position.x, GameObject.Find("ToolFireExtinguisher").transform.position.y, GameObject.Find("ToolFireExtinguisher").transform.position.z));
                     holding.transform.rotation = Quaternion.Euler(GameObject.Find("ToolFireExtinguisher").transform.rotation.x, GameObject.Find("ToolFireExtinguisher").transform.rotation.y, GameObject.Find("ToolFireExtinguisher").transform.rotation.z);
                 }
-                else if (holding.name == "Screwdriver")
+                else if (holding.name.Contains("Screwdriver") && !holding.name.Contains("Tool"))
                 {
                     itemScrewdriver.GetComponent<Renderer>().enabled = false;
                     holding.transform.position = (new Vector3(GameObject.Find("ToolScrewdriver").transform.position.x, GameObject.Find("ToolScrewdriver").transform.position.y, GameObject.Find("ToolScrewdriver").transform.position.z));
                     holding.transform.rotation = Quaternion.Euler(GameObject.Find("ToolScrewdriver").transform.rotation.x, GameObject.Find("ToolScrewdriver").transform.rotation.y, GameObject.Find("ToolScrewdriver").transform.rotation.z);
                 }
-                else if (holding.name == "Wire Kit")
+                else if (holding.name.Contains("Wire Kit") && !holding.name.Contains("Tool"))
                 {
                     itemWireKit.GetComponent<Renderer>().enabled = false;
                     holding.transform.position = (new Vector3(GameObject.Find("ToolWireKit").transform.position.x, GameObject.Find("ToolWireKit").transform.position.y, GameObject.Find("ToolWireKit").transform.position.z));
                     holding.transform.rotation = Quaternion.Euler(GameObject.Find("ToolWireKit").transform.rotation.x, GameObject.Find("ToolWireKit").transform.rotation.y, GameObject.Find("ToolWireKit").transform.rotation.z);
                 }
-                else if (holding.name == "Wrench")
+                else if (holding.name.Contains("Wrench") && !holding.name.Contains("Tool"))
                 {
                     itemWrench.GetComponent<Renderer>().enabled = false;
                     holding.transform.position = (new Vector3(GameObject.Find("ToolWrench").transform.position.x, GameObject.Find("ToolWrench").transform.position.y, GameObject.Find("ToolWrench").transform.position.z));

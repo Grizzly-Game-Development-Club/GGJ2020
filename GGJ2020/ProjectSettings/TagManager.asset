@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Selectable
   - Interactable
+  - Printed
   layers:
   - Default
   - TransparentFX
