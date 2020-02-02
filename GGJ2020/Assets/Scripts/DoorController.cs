@@ -7,25 +7,53 @@ public class DoorController : MonoBehaviour
 
     private bool opening = false;
     private bool closing = false;
+    private bool waiting = false;
 
-    // Start is called before the first frame update
-    void Start()
-    {
+    private float doorSpeed = 1;
+    private int count = 0;
 
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        if (opening)
+        if (opening) {
+            if (count <= 200)
+            {
+                count++;
+                transform.position += new Vector3(0, doorSpeed, 0) * Time.deltaTime;
+            }
+            else
+            {
+                count = 0;
+                opening = false;
+                waiting = true;
+            }
+        }
+        else if (waiting)
         {
-            transform.position += new Vector3(0, .2f, 0) * Time.deltaTime;
+            if (count <= 100) {count++;} else
+            {
+                count = 0;
+                closing = true;
+                waiting = false;
+            }
+        }
+        else if (closing)
+        {
+            if (count <= 200)
+            {
+                count++;
+                transform.position += new Vector3(0, doorSpeed * -1, 0) * Time.deltaTime;
+            }
+            else
+            {
+                count = 0;
+                closing = false;
+            }
         }
     }
 
     public void openDoor()
     {
-        if (opening == false && closing == false)
+        if (opening == false && closing == false && waiting == false)
         {
             opening = true;
         }
