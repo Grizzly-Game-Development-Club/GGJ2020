@@ -48,7 +48,6 @@ public class SelectionManager : MonoBehaviour
                 {
                     selectionRenderer.material = highlightMaterial;
                 }
-                
                 //Save Object, so we can change material back.
                 _selection = selection;
 
@@ -65,7 +64,7 @@ public class SelectionManager : MonoBehaviour
                         {
                             itemHammer.GetComponent<Renderer>().enabled = true;
                         }
-                        else if(holding.name.Contains("Fire Extinguisher") && !holding.name.Contains("Tool"))
+                        else if (holding.name.Contains("Fire Extinguisher") && !holding.name.Contains("Tool"))
                         {
                             itemFireExtinguisher.GetComponent<Renderer>().enabled = true;
                         }
@@ -97,6 +96,10 @@ public class SelectionManager : MonoBehaviour
                     {
                         selection.GetComponent<Printer>().FinishPrint();
                     }
+                }
+                else if (selection.name.Contains("Door"))
+                {
+                    selection.GetComponent<DoorController>().openDoor();
                 }
                 else
                 {
