@@ -48,11 +48,6 @@ public class SelectionManager : MonoBehaviour
                 {
                     selectionRenderer.material = highlightMaterial;
                 }
-<<<<<<< HEAD
-                
-=======
-
->>>>>>> justin3
                 //Save Object, so we can change material back.
                 _selection = selection;
 
@@ -69,11 +64,7 @@ public class SelectionManager : MonoBehaviour
                         {
                             itemHammer.GetComponent<Renderer>().enabled = true;
                         }
-<<<<<<< HEAD
-                        else if(holding.name.Contains("Fire Extinguisher") && !holding.name.Contains("Tool"))
-=======
                         else if (holding.name.Contains("Fire Extinguisher") && !holding.name.Contains("Tool"))
->>>>>>> justin3
                         {
                             itemFireExtinguisher.GetComponent<Renderer>().enabled = true;
                         }
@@ -106,13 +97,10 @@ public class SelectionManager : MonoBehaviour
                         selection.GetComponent<Printer>().FinishPrint();
                     }
                 }
-<<<<<<< HEAD
-=======
                 else if (selection.name.Contains("Door"))
                 {
                     selection.GetComponent<DoorController>().openDoor();
                 }
->>>>>>> justin3
                 else
                 {
                     if (Input.GetMouseButtonDown(0))

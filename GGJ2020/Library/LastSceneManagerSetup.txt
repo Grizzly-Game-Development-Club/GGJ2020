@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/skyBox.unity
-=======
-- path: Assets/Scenes/finishedShip_noSystems.unity
->>>>>>> justin3
+- path: Assets/Scenes/Game.unity
   isLoaded: 1
   isActive: 1
