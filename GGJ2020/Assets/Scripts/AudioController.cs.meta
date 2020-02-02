@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 851016520c78e8542bd619fdac747fee
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - airlockClose: {fileID: 8300000, guid: 2eaeae8967ee27b43b104a330b03cff0, type: 3}
+  - airlockOpen: {fileID: 8300000, guid: 30a7554ebb8480f44b128dc456d54787, type: 3}
+  - equip: {fileID: 8300000, guid: 118629f2bd93c454da0d77d8728605a9, type: 3}
+  - footstep1: {fileID: 8300000, guid: 18997a79172327949aa05de5ba84a785, type: 3}
+  - footstep2: {fileID: 8300000, guid: 731bd8a46248da249955ae10f91823bb, type: 3}
+  - footstep3: {fileID: 8300000, guid: 524971944d45e7f4290492cecbb431e8, type: 3}
+  - pickup: {fileID: 8300000, guid: 6746a24364698554fbc6311f8fdcc424, type: 3}
+  - wirekit: {fileID: 8300000, guid: 1d42ef0696d5baa4fa434bd4a48f8e71, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
