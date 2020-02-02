@@ -1,18 +1,28 @@
 fileFormatVersion: 2
-guid: c97193e04b807d442bdda2771534fced
+guid: 863cd3ca5930dca4ab3f092f8ecbb6ff
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: gray
-    2100002: red
-    2100004: black
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Wires
-    9500000: //RootNode
-    2186277476908879412: ImportLogs
+    100000: case
+    100002: helmet
+    100004: suit
+    100006: //RootNode
+    400000: case
+    400002: helmet
+    400004: suit
+    400006: //RootNode
+    2100000: case
+    2100002: helm
+    2100004: suit
+    2300000: case
+    2300002: helmet
+    2300004: suit
+    3300000: case
+    3300002: helmet
+    3300004: suit
+    4300000: case
+    4300002: helmet
+    4300004: suit
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -66,7 +76,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -93,7 +103,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

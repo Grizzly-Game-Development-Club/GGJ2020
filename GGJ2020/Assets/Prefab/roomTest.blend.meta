@@ -1,18 +1,28 @@
 fileFormatVersion: 2
-guid: c97193e04b807d442bdda2771534fced
+guid: d11ee368d087c284dbcc0ba2aa6482b8
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: gray
-    2100002: red
-    2100004: black
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Wires
-    9500000: //RootNode
-    2186277476908879412: ImportLogs
+    100000: Door
+    100002: Player
+    100004: Room
+    100006: //RootNode
+    400000: Door
+    400002: Player
+    400004: Room
+    400006: //RootNode
+    2100000: HandMat
+    2100002: Default-Material
+    2100004: No Name
+    2300000: Door
+    2300002: Player
+    2300004: Room
+    3300000: Door
+    3300002: Player
+    3300004: Room
+    4300000: Player
+    4300002: Room
+    4300004: Door
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -66,7 +76,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -93,7 +103,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

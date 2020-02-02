@@ -1,16 +1,14 @@
 fileFormatVersion: 2
-guid: c97193e04b807d442bdda2771534fced
+guid: 4eb753b13cef07948af7c9d98b8ddf71
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: gray
-    2100002: red
-    2100004: black
+    2100000: No Name
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Wires
+    4300000: Cube
     9500000: //RootNode
     2186277476908879412: ImportLogs
   externalObjects: {}
