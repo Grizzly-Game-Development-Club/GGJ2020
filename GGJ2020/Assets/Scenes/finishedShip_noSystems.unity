@@ -419,7 +419,7 @@ GameObject:
   - component: {fileID: 278130689}
   m_Layer: 0
   m_Name: Door (2)
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -523,7 +523,7 @@ GameObject:
   - component: {fileID: 323976906}
   m_Layer: 0
   m_Name: Door (1)
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1090,6 +1090,44 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &650934174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650934171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8eb723c352db515488bd5363b477c3c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  engineDamaged: 0
+  oxygenDamaged: 0
+--- !u!114 &650934175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650934171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 132a26f136c39df478c98ad2ad322601, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectableTag: Selectable
+  interactableTag: Interactable
+  highlightMaterial: {fileID: 2100000, guid: c8d5153b94c65244fa9feff309b92acf, type: 2}
+  defaultMaterial: {fileID: 2100000, guid: 95f55bf1cd6169542a04285d05463fec, type: 2}
+  itemHammer: {fileID: 0}
+  itemFireExtinguisher: {fileID: 0}
+  itemScrewdriver: {fileID: 0}
+  itemWireKit: {fileID: 0}
+  itemWrench: {fileID: 0}
+  deviceManager: {fileID: 650934174}
+  mekanik: {fileID: 0}
+  showMekanik: 0
 --- !u!1 &703555986
 GameObject:
   m_ObjectHideFlags: 0
@@ -1542,7 +1580,7 @@ GameObject:
   - component: {fileID: 1568245766}
   m_Layer: 0
   m_Name: Door (3)
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1949,7 +1987,7 @@ GameObject:
   - component: {fileID: 1897689115}
   m_Layer: 0
   m_Name: Door (4)
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4300,7 +4338,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7695582603585977623}
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.0022499918, y: 1.571, z: 0.48204657}
+  m_LocalPosition: {x: -0.0022499918, y: 1.571, z: 0.482}
   m_LocalScale: {x: 0.032747447, y: 2.100004, z: 0.93944}
   m_Children: []
   m_Father: {fileID: 8426926470084886552}
