@@ -4,15 +4,40 @@ using UnityEngine;
 
 public class OxygenOn : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public bool gravityOn = false;
+    GameObject player;
+    [SerializeField] private OxygenReplinesh oxygenReplinesh;
+    [SerializeField] private OxygenReduce oxygenReduce;
+    public float tank = .1f;
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            if (gravityOn == false)
+            {
+                gravityOn = true;
+            }
+            else
+            {
+                gravityOn = false;
+            }
+        }
+    }
     void Start()
     {
-        
+        player = GameObject.Find("Player");
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (gravityOn == true)
+        {
+            oxygenReduce.Reduce(tank);
+        }
+        else
+        {
+            oxygenReplinesh.Replinesh(tank);
+        }
     }
 }

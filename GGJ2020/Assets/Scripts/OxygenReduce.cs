@@ -6,8 +6,6 @@ public class OxygenReduce : MonoBehaviour
 {
     [SerializeField] private OxygenBar oxygenBar;
 
-    
-
     public void Reduce(float tank)
     {
         FunctionPeriodic.Create(() =>
@@ -27,11 +25,10 @@ public class OxygenReduce : MonoBehaviour
                     else
                     {
                         oxygenBar.SetColor(Color.blue);
-                    } }
+                    }
                 }
-            }, 0.3f);
+            }
+        }, 0.3f);
     }
-
-
 
 }

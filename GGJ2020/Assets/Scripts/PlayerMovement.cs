@@ -15,11 +15,19 @@ public class PlayerMovement : MonoBehaviour
 
     public bool gravityEnabled = true;
 
+    private OxygenReduce oxygenon;
+    public float tank = .1f;
     Vector3 velocity;
     bool isGrounded;
 
     void Update()
     {
+
+        if (Input.GetKey("p"))
+        {
+            oxygenon.Reduce(tank);
+        }
+
         if (gravityEnabled)
         {
             isGrounded = Physics.CheckSphere(gravityCheck.position, gravityDistance, gravityMask);

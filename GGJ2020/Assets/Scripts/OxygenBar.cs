@@ -18,5 +18,4 @@ public class OxygenBar : MonoBehaviour
         GameObject.Find("barsprite").GetComponent<SpriteRenderer>().color = color;
     }
 
-
 }
