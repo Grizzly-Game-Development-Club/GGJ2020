@@ -362,6 +362,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8473570700161078101}
   - component: {fileID: 8473570700161078100}
+  - component: {fileID: 3961359932261761996}
   - component: {fileID: 1915161233923399811}
   - component: {fileID: 8473570700161078099}
   - component: {fileID: 8473570700161078096}
@@ -411,6 +412,18 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3961359932261761996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8473570700161078103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 244cfdee272ad7041b5c2c266b00023b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1915161233923399811
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -449,6 +462,7 @@ MonoBehaviour:
   interactableTag: Interactable
   highlightMaterial: {fileID: 2100000, guid: c8d5153b94c65244fa9feff309b92acf, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 95f55bf1cd6169542a04285d05463fec, type: 2}
+  holding: {fileID: 0}
   itemHammer: {fileID: 7396058135122814278}
   itemFireExtinguisher: {fileID: 7207301442167069357}
   itemScrewdriver: {fileID: 4792979093569903489}
@@ -1019,15 +1033,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca6376ddbe1ddfa4c96131a826ce2fbf, type: 3}
---- !u!1 &7396058135122814278 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1386044462561902073, guid: ca6376ddbe1ddfa4c96131a826ce2fbf,
-    type: 3}
-  m_PrefabInstance: {fileID: 8473570700589013183}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7396058135123048806 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1386044462561599961, guid: ca6376ddbe1ddfa4c96131a826ce2fbf,
+    type: 3}
+  m_PrefabInstance: {fileID: 8473570700589013183}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7396058135122814278 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1386044462561902073, guid: ca6376ddbe1ddfa4c96131a826ce2fbf,
     type: 3}
   m_PrefabInstance: {fileID: 8473570700589013183}
   m_PrefabAsset: {fileID: 0}
