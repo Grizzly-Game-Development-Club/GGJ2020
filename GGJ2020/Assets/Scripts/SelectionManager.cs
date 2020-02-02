@@ -10,7 +10,7 @@ public class SelectionManager : MonoBehaviour
     [SerializeField] private string interactableTag = "Interactable";
     [SerializeField] private Material highlightMaterial;
     [SerializeField] private Material defaultMaterial;
-    private GameObject holding = null;
+    public GameObject holding = null;
 
     public GameObject itemHammer;
     public GameObject itemFireExtinguisher;
