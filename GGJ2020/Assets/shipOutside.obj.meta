@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 1d29c5ce90ae3df4a9a4a5041382fc60
+=======
+guid: 49b8b8860fcf85647869fa297add89a5
+>>>>>>> sam2
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
