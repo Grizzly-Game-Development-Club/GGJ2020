@@ -17,7 +17,7 @@ public class AudioController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        myAudioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -26,7 +26,7 @@ public class AudioController : MonoBehaviour
         
     }
 
-    private void Airlock(string motion)
+    public void Airlock(string motion)
     {
         if(motion == "close")
         {
@@ -38,7 +38,7 @@ public class AudioController : MonoBehaviour
         }
     }
 
-    private void TakeItem(string type)
+    public void TakeItem(string type)
     {
         //use for held items
         if (type == "held")
@@ -52,24 +52,27 @@ public class AudioController : MonoBehaviour
         }
     }
 
-    private void Footsteps()
+    public void Footsteps()
     {
-        int rand = Random.Range(1, 3);
-        if (rand == 1)
+        if (!myAudioSource.isPlaying)
         {
-            myAudioSource.PlayOneShot(footstep1);
-        }
-        else if (rand == 2)
-        {
-            myAudioSource.PlayOneShot(footstep2);
-        }
-        else
-        {
-            myAudioSource.PlayOneShot(footstep3);
+            int rand = Random.Range(0, 3);
+            if (rand == 1)
+            {
+                myAudioSource.PlayOneShot(footstep1);
+            }
+            else if (rand == 2)
+            {
+                myAudioSource.PlayOneShot(footstep2);
+            }
+            else
+            {
+                myAudioSource.PlayOneShot(footstep3);
+            }
         }
     }
 
-    private void RepairWires()
+    public void RepairWires()
     {
         myAudioSource.PlayOneShot(wirekit);
     }

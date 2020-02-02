@@ -47,6 +47,10 @@ public class PlayerMovement : MonoBehaviour
         if (gravityEnabled)
         {
             controller.Move(movePlayer * speed * Time.deltaTime);
+            if (x != 0 && z != 0)
+            {
+                GetComponent<AudioController>().Footsteps();
+            }
         }
         else
         {

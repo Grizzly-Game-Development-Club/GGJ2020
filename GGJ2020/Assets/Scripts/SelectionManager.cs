@@ -25,6 +25,7 @@ public class SelectionManager : MonoBehaviour
     public Texture mekanik;
     public bool showMekanik;
 
+
     void Update()
     {
         //Change Material Back
@@ -84,6 +85,9 @@ public class SelectionManager : MonoBehaviour
                         //Hide World Item Model
                         holding.GetComponent<Renderer>().enabled = false;
                         holding.GetComponent<Collider>().enabled = false;
+
+                        //Sound
+                        GetComponent<AudioController>().TakeItem("not held");
                     }
                 }
             }
