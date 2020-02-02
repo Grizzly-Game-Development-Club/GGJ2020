@@ -30,17 +30,42 @@ public class PlayerMovement : MonoBehaviour
             }
 
         }
+
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
 
         Vector3 movePlayer = transform.right * x + transform.forward * z;
 
-        controller.Move(movePlayer * speed * Time.deltaTime);
+        if (gravityEnabled)
+        {
+            controller.Move(movePlayer * speed * Time.deltaTime);
+        }
+        else
+        {
+            controller.Move((movePlayer * speed * Time.deltaTime)/3);
+        }
 
         if (gravityEnabled)
         {
             velocity.y += gravity * Time.deltaTime;
             controller.Move(velocity * Time.deltaTime);
+        }
+
+        if (gravityEnabled == false)
+        {
+            if (Input.GetKey(KeyCode.Space))
+            {
+                controller.Move((transform.up * speed * Time.deltaTime)/3);
+            }
+            if (Input.GetKey(KeyCode.LeftControl))
+            {
+                controller.Move(((transform.up * speed * Time.deltaTime) / 3) * -1);
+            }
+        }
+
+        if (Input.GetKey("x"))
+        {
+            gravityEnabled = false;
         }
     }
 }
