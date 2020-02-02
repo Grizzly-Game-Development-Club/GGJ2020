@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class gravity : MonoBehaviour
+public class gravityZoner : MonoBehaviour
 {
     public bool gravityOn = true;
     GameObject player;

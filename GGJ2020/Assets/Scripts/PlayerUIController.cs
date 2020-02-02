@@ -28,7 +28,7 @@ public class PlayerUIController : MonoBehaviour
             else
             {
                 helmetRend.enabled = true;
-                Debug.Log("Helmet onH");
+                Debug.Log("Helmet on");
             }
         }
     }
