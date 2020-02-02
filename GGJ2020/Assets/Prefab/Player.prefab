@@ -1,6 +1,10 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+<<<<<<< HEAD
 --- !u!1 &4103021913395340653
+=======
+--- !u!1 &5382244789038789212
+>>>>>>> justin3
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,6 +12,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD
   - component: {fileID: 4103021913395340652}
   - component: {fileID: 4103021913395340648}
   - component: {fileID: 4103021913395340649}
@@ -343,6 +348,12 @@ GameObject:
   - component: {fileID: 4103021914375303099}
   - component: {fileID: 4103021914375303096}
   - component: {fileID: 4103021914375303097}
+=======
+  - component: {fileID: 5382244789038789187}
+  - component: {fileID: 5382244789038789186}
+  - component: {fileID: 5382244789038789213}
+  - component: {fileID: 5382244789038789184}
+>>>>>>> justin3
   m_Layer: 0
   m_Name: FPCamera
   m_TagString: MainCamera
@@ -350,27 +361,46 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
 --- !u!4 &4103021914375303102
+=======
+--- !u!4 &5382244789038789187
+>>>>>>> justin3
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 4103021914375303103}
+=======
+  m_GameObject: {fileID: 5382244789038789212}
+>>>>>>> justin3
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
+<<<<<<< HEAD
   m_Father: {fileID: 4103021914805117172}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &4103021914375303099
+=======
+  m_Father: {fileID: 5382244789828899585}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!20 &5382244789038789186
+>>>>>>> justin3
 Camera:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 4103021914375303103}
+=======
+  m_GameObject: {fileID: 5382244789038789212}
+>>>>>>> justin3
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
@@ -406,30 +436,49 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+<<<<<<< HEAD
 --- !u!81 &4103021914375303096
+=======
+--- !u!81 &5382244789038789213
+>>>>>>> justin3
 AudioListener:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 4103021914375303103}
   m_Enabled: 1
 --- !u!114 &4103021914375303097
+=======
+  m_GameObject: {fileID: 5382244789038789212}
+  m_Enabled: 1
+--- !u!114 &5382244789038789184
+>>>>>>> justin3
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 4103021914375303103}
+=======
+  m_GameObject: {fileID: 5382244789038789212}
+>>>>>>> justin3
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 68b9cbaa33d1e5946ba64c1e5456ff09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   mouseSensitivity: 100
+<<<<<<< HEAD
   playerBody: {fileID: 4103021914805117172}
   cursor: {fileID: 2800000, guid: 7ecc291bf91316147912b350983095d5, type: 3}
 --- !u!1 &4103021914805116937
+=======
+  playerBody: {fileID: 5382244789828899585}
+--- !u!1 &5382244789828899587
+>>>>>>> justin3
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -437,11 +486,17 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD
   - component: {fileID: 4103021914805117172}
   - component: {fileID: 4103021914805117173}
   - component: {fileID: 4103021914805116938}
   - component: {fileID: 4103021914805116939}
   - component: {fileID: 4103021914805116936}
+=======
+  - component: {fileID: 5382244789828899585}
+  - component: {fileID: 5382244789828899584}
+  - component: {fileID: 5382244789828899590}
+>>>>>>> justin3
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -449,17 +504,26 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
 --- !u!4 &4103021914805117172
+=======
+--- !u!4 &5382244789828899585
+>>>>>>> justin3
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 4103021914805116937}
+=======
+  m_GameObject: {fileID: 5382244789828899587}
+>>>>>>> justin3
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+<<<<<<< HEAD
   - {fileID: 4103021914375303102}
   - {fileID: 4103021913679600222}
   - {fileID: 4103021913504403773}
@@ -467,12 +531,24 @@ Transform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!143 &4103021914805117173
+=======
+  - {fileID: 5382244789038789187}
+  - {fileID: 5382244790592791413}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!143 &5382244789828899584
+>>>>>>> justin3
 CharacterController:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 4103021914805116937}
+=======
+  m_GameObject: {fileID: 5382244789828899587}
+>>>>>>> justin3
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -484,18 +560,27 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!114 &4103021914805116938
+=======
+--- !u!114 &5382244789828899590
+>>>>>>> justin3
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 4103021914805116937}
+=======
+  m_GameObject: {fileID: 5382244789828899587}
+>>>>>>> justin3
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e552de26da20073478fc9c28675edccb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   controller: {fileID: 4103021914805117173}
   speed: 12
   gravity: -9.81
@@ -544,6 +629,17 @@ MonoBehaviour:
   engineDamaged: 0
   oxygenDamaged: 0
 --- !u!1 &4103021914808543878
+=======
+  controller: {fileID: 0}
+  speed: 12
+  gravity: -9.81
+  gravityCheck: {fileID: 0}
+  gravityDistance: 0.4
+  gravityMask:
+    serializedVersion: 2
+    m_Bits: 0
+--- !u!1 &5382244790592791412
+>>>>>>> justin3
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -551,6 +647,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD
   - component: {fileID: 4103021914808543873}
   - component: {fileID: 4103021914808543885}
   - component: {fileID: 4103021914808543874}
@@ -559,16 +656,27 @@ GameObject:
   m_Layer: 0
   m_Name: ToolFireExtinguisher
   m_TagString: Selectable
+=======
+  - component: {fileID: 5382244790592791413}
+  m_Layer: 0
+  m_Name: GravityChecker
+  m_TagString: Untagged
+>>>>>>> justin3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
 --- !u!4 &4103021914808543873
+=======
+--- !u!4 &5382244790592791413
+>>>>>>> justin3
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 4103021914808543878}
   m_LocalRotation: {x: 0.54167527, y: 0.5416752, z: 0.45451954, w: 0.45451948}
   m_LocalPosition: {x: -0.5, y: 0, z: 0.5}
@@ -872,3 +980,13 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 7.1351757, y: 3.7918205, z: 2}
   m_Center: {x: -0.3786175, y: -0.026793191, z: -0.00033950806}
+=======
+  m_GameObject: {fileID: 5382244790592791412}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5382244789828899585}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> justin3
