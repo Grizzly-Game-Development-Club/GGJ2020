@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
 - path: Assets/Scenes/Game.unity
-=======
-- path: Assets/Scenes/OxygenBar1.unity
->>>>>>> sam2
   isLoaded: 1
   isActive: 1
