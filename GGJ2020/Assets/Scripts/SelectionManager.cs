@@ -98,6 +98,10 @@ public class SelectionManager : MonoBehaviour
                         selection.GetComponent<Printer>().FinishPrint();
                     }
                 }
+                else if (selection.name.Contains("Door"))
+                {
+                    selection.GetComponent<DoorController>().openDoor();
+                }
                 else
                 {
                     if (Input.GetMouseButtonDown(0))
